@@ -1,0 +1,25 @@
+# --- GPU acceleration -------------------------------------------------------
+# macOS (Apple Silicon): the PyPI wheel already includes MPS. Nothing extra needed.
+#
+#
+# Windows (NVIDIA CUDA): the PyPI wheel is CPU-only, so install the CUDA build first:
+#     pip install torch==2.14.1 torchvision==0.29.0 --index-url https://download.pytorch.org/whl/cu130
+#   then: pip install -r requirements.txt
+#
+# ----------------------------------------------------------------------------
+ 
+# Deep learning
+torch==2.14.1
+torchvision==0.29.0
+ 
+# Classical ML
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+ 
+# Data / plotting
+numpy==2.5.3
+pandas==3.0.5
+matplotlib==3.11.2
+pillow==12.3.0
